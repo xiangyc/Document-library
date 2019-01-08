@@ -5,7 +5,8 @@
   4. 导航栏的菜单配置需要在app.json中的tabBar中进行配置注册。
   5. 全局变量需要在app.js的globalData中进行定义，通过var app =  getApp() 调用。
   6. 公共脚本需要将定义好的function在module.exports中进行暴露， 暴露模块接口。
-  https://raw.githubusercontent.com/xiangyc/miniprogram/master/images/home/home-add-02.png
+  ![这里写图片描述](https://raw.githubusercontent.com/xiangyc/miniprogram/master/images/home/home-add-02.png)
+  
 
 二 左右轮播（swiper）、上下轮播
   1. autoplay、interval、duration....自动切换播放、播放间隔时间、播放动画时间。
