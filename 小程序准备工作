@@ -6,7 +6,7 @@
   ● 小程序官网地址：https://developers.weixin.qq.com/miniprogram/dev/
 
 
-  #● 准备工作
+  ## ● 准备工作
   1. 小程序官网地址：https://developers.weixin.qq.com/miniprogram/dev/，进行申请小程序账号。（eg.：1219870668@qq.com），申请完进行登录。
   2. 登录后在“开发设置”中查看AppID并记下，并配置request的合法请求域名。
   3. 开发管理中的开发版本-审核版本-线上版本。
