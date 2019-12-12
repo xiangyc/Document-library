@@ -1,50 +1,44 @@
-![这里写图片描述](https://raw.githubusercontent.com/xiangyc/Document-library/master/image/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%80%E7%9A%84%E7%9B%AE%E5%BD%95.png)
+### 一  环境
 
-### 一  整体结构
-
-    1. 图片目录(images)、页面目录(pages)、公共脚本(utils)、全局配置(app.json、project.config.json)四个大的部分构成。
-    2. 页面目录中，每个页面配置完成会自动生成4个文件(JS、JSON、WXSS、WXML)。页面逻辑，页面配置，页面样式，页面结构。
-    3. 所有页面需要在app.json中的pages中进行配置注册。
-    4. 导航栏的菜单配置需要在app.json中的tabBar中进行配置注册。
-    5. 全局变量需要在app.js的globalData中进行定义，通过var app =  getApp() 调用。
-    6. 公共脚本需要将定义好的function在module.exports中进行暴露， 暴露模块接口。 
+    windows: 10
+    vue-cli: 4
+    编辑器： vsCode/sublime/webstorm
+    npm: 6.11.3 ＃去nodejs网安装https://npm.taobao.org/mirrors/node/v12.12.0/node-v12.12.0-x64.msi
 
 
-### 二 左右轮播（swiper）、上下轮播
+### 二 安装
 
-    1. autoplay、interval、duration....自动切换播放、播放间隔时间、播放动画时间。
-    2. 比如banner的左右滚动、公告的上下滚动（设置vertical）。
+    >npm install -g @vue/cli
+    # 查看版本
+    PS D:\vue\project-3> vue -V
+    @vue/cli 4.0.4
 
 
-### 三  页面跳转、参数传递、接收参数
-  1. 四种跳转方式
-  
-    wx.navigateTo   跳转新页面；
-    wx.switchTab 跳转导航菜单页面；
-    wx.redirectTo，关闭当前页面，跳转新页面；
-    <navigator> 页面标签跳转。
+### 三  创建项目
+  添加淘宝镜像：
+    npm install -g cnpm --registry=https://registry.npm.taobao.org
+    创建项目
+    vue create project-3
 
-  2. 参数传递
-  
-    wx.navigateTo({
-      url: '../activity/news/detail?id=' + activityid
-    })
+    #这里可以上下选择， 我们选 手动
+    Vue CLI v4.0.4
+    ? Please pick a preset:    
+      default (babel, eslint)  
+    > Manually select features 
 
-    wx.switchTab({
-      url: '../../index/index'
-    })
-
-    wx.redirectTo({
-      url: '../activity/news/detail?id=' + activityid
-    })
-
-    <navigator url='../test/test'></navigator>
-
-  3. 接收参数：
-
-    onLoad: function (options) {
-       var id = options.id;
-    }
+    # 然后根据自己的需求选组件
+    Vue CLI v4.0.4
+    ? Please pick a preset: Manually select features
+    ? Check the features needed for your project: 
+     (*) Babel
+     ( ) TypeScript
+     ( ) Progressive Web App (PWA) Support        
+     (*) Router
+     (*) Vuex
+     (*) CSS Pre-processors
+    >(*) Linter / Formatter
+     ( ) Unit Testing
+     ( ) E2E Testing
 
 
 ### 四  列表数据绑定
